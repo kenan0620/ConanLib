@@ -1,0 +1,6 @@
+framework module Pods_ConanLib_Tests {
+  umbrella header "Pods-ConanLib_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

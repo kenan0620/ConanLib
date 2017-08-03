@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ConanLib_Example' do
+  pod 'ConanLib', :path => '../'
+
+  target 'ConanLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
