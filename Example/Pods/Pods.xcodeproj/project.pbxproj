@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		275228341F32D76500B23BBE /* ConanLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 275228321F32D76500B23BBE /* ConanLib.h */; };
-		275228361F32D89E00B23BBE /* ConanLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275228351F32D89E00B23BBE /* ConanLib.a */; };
+		275228871F32EFB400B23BBE /* libConanLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275228861F32EFB400B23BBE /* libConanLib.a */; };
 		7EEF3677732BE18115E729B3CDCD8B22 /* Pods-ConanLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4BE1EF264F52FE4EE6F9AF159020473 /* Pods-ConanLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81FF2DE0042391C9BE79762FC618EA2B /* ConanLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41348A5B7670D8168FAC2FF6450CE340 /* ConanLib-dummy.m */; };
 		91CEA5EC1D9F1D00ED3D3AF4203694C2 /* Pods-ConanLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9365826A35250D8A890850901CF3E /* Pods-ConanLib_Tests-dummy.m */; };
@@ -34,7 +34,7 @@
 		029E3AD868FE92B7D9985498E3B95E08 /* Pods-ConanLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConanLib_Tests.modulemap"; sourceTree = "<group>"; };
 		17D4EED25FCF4CEFF5C13388DB526783 /* Pods-ConanLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConanLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		275228321F32D76500B23BBE /* ConanLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConanLib.h; sourceTree = "<group>"; };
-		275228351F32D89E00B23BBE /* ConanLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ConanLib.a; sourceTree = "<group>"; };
+		275228861F32EFB400B23BBE /* libConanLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libConanLib.a; sourceTree = "<group>"; };
 		340EEDFF23C1BA0CAE2A81770E3F2D25 /* Pods-ConanLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConanLib_Example-frameworks.sh"; sourceTree = "<group>"; };
 		34576F7B5D309376DF1F20A8CCB9EB1E /* Pods-ConanLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ConanLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3ABF028C24C680BE67FC11EB6F19D992 /* Pods-ConanLib_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConanLib_Example-resources.sh"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1591CA5FE1612E9220C8E4FA8FE4107 /* Foundation.framework in Frameworks */,
-				275228361F32D89E00B23BBE /* ConanLib.a in Frameworks */,
+				275228871F32EFB400B23BBE /* libConanLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,10 +98,18 @@
 		0145451A25DFE5E690020E84B7035E36 /* ConanLib */ = {
 			isa = PBXGroup;
 			children = (
-				275228351F32D89E00B23BBE /* ConanLib.a */,
 				275228321F32D76500B23BBE /* ConanLib.h */,
+				275228851F32EF8B00B23BBE /* Frameworks */,
 			);
 			path = ConanLib;
+			sourceTree = "<group>";
+		};
+		275228851F32EF8B00B23BBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				275228861F32EFB400B23BBE /* libConanLib.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5D2D0C7F857580F545E231B77DF1825E /* Products */ = {
