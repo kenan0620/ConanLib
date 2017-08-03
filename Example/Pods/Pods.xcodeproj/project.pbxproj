@@ -99,17 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				275228321F32D76500B23BBE /* ConanLib.h */,
-				275228851F32EF8B00B23BBE /* Frameworks */,
-			);
-			path = ConanLib;
-			sourceTree = "<group>";
-		};
-		275228851F32EF8B00B23BBE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
 				275228861F32EFB400B23BBE /* libConanLib.a */,
 			);
-			name = Frameworks;
+			path = ConanLib;
 			sourceTree = "<group>";
 		};
 		5D2D0C7F857580F545E231B77DF1825E /* Products */ = {

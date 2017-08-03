@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConanLib'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = ' ConanLib.'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,6 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
 s.ios.deployment_target = '8.0'
 s.requires_arc = true
-s.source_files = 'ConanLib/*.{h,m}'
-
+s.source_files = 'ConanLib/*.h'
+s.preserve_paths = 'ConanLib/*.a'
 end
