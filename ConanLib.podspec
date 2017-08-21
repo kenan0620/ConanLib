@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConanLib'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = ' ConanLib.'
 
 # This description is used to generate tags and improve search results.
@@ -32,4 +32,5 @@ s.ios.deployment_target = '8.0'
 s.requires_arc = true
 s.source_files = 'ConanLib/*.h'
 s.vendored_libraries = 'ConanLib/*.a'
+s.dependency 'AFNetworking', '~> 3.1.0'
 end
